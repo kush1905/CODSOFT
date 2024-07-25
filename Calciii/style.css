@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(88, 87, 87),rgb(248, 209, 117));
+}
+  
+.calci {
+    background-color: #00000d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+.calci #show {
+    color: #e0e0e0;
+    width: calc(100% - 20px);
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.calci .buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calci .buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 1s, color 0.3s;
+}
+
+.calci .buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+.calci .buttons button:active {
+    background-color:gray;
+}
